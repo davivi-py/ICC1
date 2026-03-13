@@ -13,13 +13,13 @@ int main()
 
     area_total = paredes*(largura*altura);
 
-    custo_tinta = (20*area)/5;
+    custo_tinta = (20*area_total)/5;
 
-    custo_m_o = (area/10)*30;
+    custo_m_o = (area_total/10)*30;
 
     total = custo_m_o + custo_tinta;
 
-    printf("O orçamento total do projeto é de: %2f\n", total);
+    printf("O orçamento total do projeto é de: %2f\nR$", total);
 
     return 0;
 
